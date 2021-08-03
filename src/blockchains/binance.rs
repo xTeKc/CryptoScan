@@ -1,11 +1,11 @@
-extern crate reqwest;
-extern crate fstrings;
-extern crate serde_json;
-extern crate colored;
+use reqwest;
+use fstrings;
+use serde_json;
+use colored;
 
 use http::{Request};
 
-fn binance_req() {
+pub fn binance_req() {
     match reqwest::get("https://api.coingecko.com/api/v3/ping")
         Ok(mut response) => {
             //Check if 200 ok
