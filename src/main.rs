@@ -1,9 +1,7 @@
- pub mod binance {
-     pub fn binance_req() {}
- }
+use clap::(BC);
 
-use binance::binance_req;
+mod blockchains;
 
 fn main() {
-    binance_req();
+    binance::binance_req();
 }
