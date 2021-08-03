@@ -1,9 +1,3 @@
-use reqwest;
-use fstrings;
-use serde_json;
-use colored;
-
-use http::{Request};
 
 pub fn binance_req() {
     match reqwest::get("https://api.coingecko.com/api/v3/ping")
