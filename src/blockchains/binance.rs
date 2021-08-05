@@ -1,5 +1,4 @@
 
-
 pub fn binance_req() {
     match reqwest::get("https://api.coingecko.com/api/v3/ping")
         Ok(mut response) => {
