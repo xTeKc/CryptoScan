@@ -1,3 +1,4 @@
+use api;
 use binance;
 use cardano;
 use ethereum;
