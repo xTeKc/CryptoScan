@@ -1,5 +1,4 @@
-pub mod binance;
-pub mod binance_req;
+
 
 pub fn binance_req() {
     match reqwest::get("https://api.coingecko.com/api/v3/ping")
