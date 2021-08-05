@@ -1,5 +1,6 @@
 
 
 pub fn binance_req() {
-    println!("Hello, From Binance.")
+    println!("Hello, From Binance.");
 }
+
