@@ -1,5 +1,5 @@
 mod blockchains;
-
+use reqwest::get;
 use blockchains::{
     binance,
     cardano,
@@ -13,7 +13,9 @@ use blockchains::{
 };
 
 
-fn main() {
+pub fn main() {
+    let req1 = reqwest::get("https://api.coingecko.com/api/v3/ping");
+
     // binance::binance_req();
     // cardano::cardano_req();
     // ethereum::ethereum_req();
