@@ -1,4 +1,5 @@
 mod blockchains;
+
 use blockchains::{
     binance,
     cardano,
@@ -13,13 +14,13 @@ use blockchains::{
 
 
 fn main() {
-    binance::binance_req();
-    cardano::cardano_req();
-    ethereum::ethereum_req();
-    fantom::fantom_req();
-    harmony::harmony_req();
-    huobi::huobi_req();
-    polygon::polygon_req();
-    solana::solana_req();
-    xdai::xdai_req();
+    // binance::binance_req();
+    // cardano::cardano_req();
+    // ethereum::ethereum_req();
+    // fantom::fantom_req();
+    // harmony::harmony_req();
+    // huobi::huobi_req();
+    // polygon::polygon_req();
+    // solana::solana_req();
+    // xdai::xdai_req();
 }
