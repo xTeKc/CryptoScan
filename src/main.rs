@@ -10,6 +10,7 @@ use blockchains::{
     solana,
     xdai
 };
+pub use iced;
 
 
 pub fn main() {
@@ -23,3 +24,6 @@ pub fn main() {
     solana::call_solana_req();
     xdai::call_xdai_req();
 }
+
+
+
