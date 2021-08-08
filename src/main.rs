@@ -14,12 +14,12 @@ use blockchains::{
 
 pub fn main() {
     binance::call_binance_req();
-    // cardano::cardano_req();
-    // ethereum::ethereum_req();
-    // fantom::fantom_req();
-    // harmony::harmony_req();
-    // huobi::huobi_req();
-    // polygon::polygon_req();
-    // solana::solana_req();
-    // xdai::xdai_req();
+    cardano::call_cardano_req();
+    ethereum::call_ethereum_req();
+    fantom::call_fantom_req();
+    harmony::call_harmony_req();
+    huobi::call_huobi_req();
+    polygon::call_polygon_req();
+    solana::call_solana_req();
+    xdai::call_xdai_req();
 }
