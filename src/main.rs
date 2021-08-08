@@ -13,8 +13,7 @@ use blockchains::{
 
 
 pub fn main() {
-
-    // binance::binance_req();
+    binance::call_binance_req();
     // cardano::cardano_req();
     // ethereum::ethereum_req();
     // fantom::fantom_req();
