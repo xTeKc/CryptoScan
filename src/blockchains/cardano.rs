@@ -10,6 +10,6 @@ Ok(())
 }
 
 pub fn call_cardano_req() {
-  let b = binance_req();
+  let b = cardano_req();
   println!("{:?}", b);
 }
