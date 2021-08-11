@@ -36,7 +36,7 @@ pub fn cardano_bc() {
 }
 
 pub fn ethereum_bc() {
-    let eth = //implement UI dropdown selection
+    let eth_dropdown = //implement UI dropdown selection
 }
 
 pub fn fantom_bc() {
