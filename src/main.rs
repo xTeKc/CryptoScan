@@ -28,7 +28,7 @@ pub fn main() {
 
 
 pub fn binance_bc() {
-    let bsc = //implement UI dropdown selection
+    let bsc_dropdown = //implement UI dropdown selection
 }
 
 pub fn cardano_bc() {
