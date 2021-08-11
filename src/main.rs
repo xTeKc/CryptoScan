@@ -56,7 +56,7 @@ pub fn polygon_bc() {
 }
 
 pub fn solana_bc() {
-    let sol = //implement UI dropdown selection
+    let sol_dropdown = //implement UI dropdown selection
 }
 
 pub fn xdai_bc() {
