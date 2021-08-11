@@ -56,5 +56,9 @@ pub fn polygon_bc() {
 }
 
 pub fn solana_bc() {
+
+}
+
+pub fn xdai_bc() {
     
 }
