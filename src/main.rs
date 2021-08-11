@@ -32,7 +32,7 @@ pub fn binance_bc() {
 }
 
 pub fn cardano_bc() {
-    let ada = //implement UI dropdown selection
+    let ada_dropdown = //implement UI dropdown selection
 }
 
 pub fn ethereum_bc() {
