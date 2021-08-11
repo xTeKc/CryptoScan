@@ -52,5 +52,9 @@ pub fn huobi_bc() {
 }
 
 pub fn polygon_bc() {
+
+}
+
+pub fn solana_bc() {
     
 }
