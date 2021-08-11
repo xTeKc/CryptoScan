@@ -40,5 +40,9 @@ pub fn ethereum_bc() {
 }
 
 pub fn fantom_bc() {
+
+}
+
+pub fn harmony_bc() {
     
 }
