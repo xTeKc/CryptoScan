@@ -44,5 +44,9 @@ pub fn fantom_bc() {
 }
 
 pub fn harmony_bc() {
+
+}
+
+pub fn huobi_bc() {
     
 }
