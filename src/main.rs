@@ -44,7 +44,7 @@ pub fn fantom_bc() {
 }
 
 pub fn harmony_bc() {
-    let one = //implement UI dropdown selection
+    let hmy = //implement UI dropdown selection
 }
 
 pub fn huobi_bc() {
