@@ -52,7 +52,7 @@ pub fn huobi_bc() {
 }
 
 pub fn polygon_bc() {
-
+    let poly = //implement UI dropdown selection
 }
 
 pub fn solana_bc() {
