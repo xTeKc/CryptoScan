@@ -60,5 +60,5 @@ pub fn solana_bc() {
 }
 
 pub fn xdai_bc() {
-
+    let xdai = //implement UI dropdown selection
 }
