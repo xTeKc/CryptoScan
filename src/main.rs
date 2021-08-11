@@ -40,7 +40,7 @@ pub fn ethereum_bc() {
 }
 
 pub fn fantom_bc() {
-    let ftm = //implement UI dropdown selection
+    let ftm_dropdown = //imimplement UI dropdown selection
 }
 
 pub fn harmony_bc() {
