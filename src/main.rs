@@ -36,5 +36,9 @@ pub fn cardano_bc() {
 }
 
 pub fn ethereum_bc() {
+
+}
+
+pub fn fantom_bc() {
     
 }
