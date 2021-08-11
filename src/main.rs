@@ -48,7 +48,7 @@ pub fn harmony_bc() {
 }
 
 pub fn huobi_bc() {
-
+    let huo = //implement UI dropdown selection
 }
 
 pub fn polygon_bc() {
