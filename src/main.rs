@@ -32,5 +32,9 @@ pub fn binance_bc() {
 }
 
 pub fn cardano_bc() {
+
+}
+
+pub fn ethereum_bc() {
     
 }
