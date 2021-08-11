@@ -10,7 +10,7 @@ use blockchains::{
     solana,
     xdai
 };
-pub use iced;
+
 
 
 pub fn main() {
@@ -27,3 +27,6 @@ pub fn main() {
 
 
 
+pub fn binance_bc() {
+    
+}
