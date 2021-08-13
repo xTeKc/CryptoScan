@@ -30,6 +30,22 @@ use iced::{
 };
 
 
+
+pub fn ui() -> iced::Result {
+    Crypdatrs::run(Settings::default())
+}
+
+#[derive(Debug)]
+enum Crypdatrs {
+    Loading,
+    Loaded {
+
+    },
+}
+
+
+
+
 pub fn main() {
     binance::call_binance_req();
     cardano::call_cardano_req();
