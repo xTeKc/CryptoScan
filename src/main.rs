@@ -58,6 +58,13 @@ impl Application for CrypDatRs {
     type Executor = iced::executor::Default;
     type Message = Message;
     type Flags = ();
+
+    fn new(_flags: ()) -> (CrypDatRs, Command<Message>) {
+        (
+            CrypDatRs::Loading,
+            Command::perform(CrypDatRs::search(), Message::CrypDatRsFound),
+        )
+    }
 }
 
 
