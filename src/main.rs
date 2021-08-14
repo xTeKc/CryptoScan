@@ -50,7 +50,7 @@ enum Crypdatrs {
 
 #[derive(Debug, Clone)]
 enum Message {
-    CrypDatRsFound(Result<CrypDatRs, Error>),
+    //CrypDatRsFound(Result<CrypDatRs, Error>),
     Search,
 }
 
