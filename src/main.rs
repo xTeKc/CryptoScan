@@ -54,6 +54,11 @@ enum Message {
     Search,
 }
 
+impl Application for CrypDatRs {
+    type Executor = iced::executor::Default;
+    type Message = Message;
+    type Flags = ();
+}
 
 
 pub fn main() {
