@@ -65,6 +65,15 @@ impl Application for CrypDatRs {
             Command::perform(CrypDatRs::search(), Message::CrypDatRsFound),
         )
     }
+
+    fn title(&self) -> String {
+        let subtitle = match self {
+            CrypDatRs::Loading => "Loading",
+            CrypDatRs::Loaded { crypdatrs, .. } => &crypdatrs.name,
+            CrypDatRs::Errored { .. } => "Error",
+        };
+    }
+
 }
 
 
