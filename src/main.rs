@@ -41,6 +41,10 @@ enum Crypdatrs {
     Loaded {
 
     },
+    Errored {
+        error: Error,
+        try_again: button::State,
+    },
 }
 
 
