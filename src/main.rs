@@ -39,7 +39,8 @@ pub fn ui() -> iced::Result {
 enum Crypdatrs {
     Loading,
     Loaded {
-
+        //crypdatrs: CrypDatRs,
+        //search: button::State,
     },
     Errored {
         error: Error,
