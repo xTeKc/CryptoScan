@@ -11,73 +11,8 @@ use blockchains::{
     xdai
 };
 
-use iced::{
-    button,
-    futures,
-    image.
-    Align,
-    Application,
-    Button,
-    Column,
-    Command,
-    Container,
-    Element,
-    Image,
-    Length,
-    Row,
-    Settings,
-    Text,    
-};
 
 
-
-pub fn ui() -> iced::Result {
-    Crypdatrs::run(Settings::default())
-}
-
-#[derive(Debug)]
-enum Crypdatrs {
-    Loading,
-    Loaded {
-        //crypdatrs: CrypDatRs,
-        //search: button::State,
-    },
-    Errored {
-        error: Error,
-        try_again: button::State,
-    },
-}
-
-#[derive(Debug, Clone)]
-enum Message {
-    //CrypDatRsFound(Result<CrypDatRs, Error>),
-    Search,
-}
-
-impl Application for CrypDatRs {
-    type Executor = iced::executor::Default;
-    type Message = Message;
-    type Flags = ();
-
-    fn new(_flags: ()) -> (CrypDatRs, Command<Message>) {
-        (
-            CrypDatRs::Loading,
-            Command::perform(CrypDatRs::search(), Message::CrypDatRsFound),
-        )
-    }
-
-    fn title(&self) -> String {
-        let subtitle = match self {
-            CrypDatRs::Loading => "Loading",
-            CrypDatRs::Loaded { crypdatrs, .. } => &crypdatrs.name,
-            CrypDatRs::Errored { .. } => "Error",
-        };
-
-        format!("{} - CrypDatRs", subtitle)
-
-    }
-
-}
 
 
 pub fn main() {

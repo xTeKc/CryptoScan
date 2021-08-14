@@ -8,6 +8,5 @@ edition = "2018"
 [dependencies]
 colored = "2.0.0"
 fstrings = "0.2.3"
-iced = "0.3.0"
 serde_json = "1.0.66"
 ureq = "2.1.1"
