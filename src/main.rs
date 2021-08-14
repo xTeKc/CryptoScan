@@ -72,6 +72,9 @@ impl Application for CrypDatRs {
             CrypDatRs::Loaded { crypdatrs, .. } => &crypdatrs.name,
             CrypDatRs::Errored { .. } => "Error",
         };
+
+        format!("{} - CrypDatRs", subtitle)
+
     }
 
 }
