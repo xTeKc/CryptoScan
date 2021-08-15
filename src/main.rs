@@ -13,8 +13,9 @@ use blockchains::{
 use cpp::cpp;
 
 
-
-
+cpp!{{
+    #include <iostream>
+}}
 
 
 pub fn main() {
