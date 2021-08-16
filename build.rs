@@ -1,5 +1,5 @@
-extern crate cpp_build;
+// extern crate cpp_build;
 
-fn main() {
-    cpp_build::build("src/main.rs");
-}
+// fn main() {
+//     cpp_build::build("src/main.rs");
+// }
