@@ -8,10 +8,11 @@ build = "build.rs"
 
 [dependencies]
 colored = "2.0.0"
-cpp = "0.5.6"
+# cpp = "0.5.6"
+# cpp_macros = "0.5.6"
 fstrings = "0.2.3"
 serde_json = "1.0.66"
 ureq = "2.1.1"
 
-[build-dependencies]
-cpp_build = "0.5.6"
+# [build-dependencies]
+# cpp_build = "0.5.6"
