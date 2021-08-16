@@ -1,3 +1,4 @@
+/api
 /target
 Cargo.lock
 .env
