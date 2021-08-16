@@ -10,12 +10,12 @@ use blockchains::{
     solana,
     xdai
 };
-// use cpp::cpp;
-// use cpp_macros::*;
+use cpp::cpp;
+use cpp_macros::*;
 
-// cpp!{{
-//     #include <iostream>
-// }}
+cpp!{{
+    #include <iostream>
+}}
 
 //UI
 
