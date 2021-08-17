@@ -10,18 +10,7 @@ use blockchains::{
     solana,
     xdai
 };
-use cpp::cpp;
-use cpp_macros::*;
 
-cpp!{{
-    #include <iostream>
-}}
-
-//UI
-
-
-
-//UI
 
 pub fn main() {
     binance::call_binance_req();
