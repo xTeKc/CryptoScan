@@ -26,38 +26,38 @@ pub fn main() {
 
 
 
-pub fn binance_bc() {
-    let bsc_dropdown = //implement UI dropdown selection
-}
+// pub fn binance_bc() {
+//     let bsc_dropdown
+// }
 
-pub fn cardano_bc() {
-    let ada_dropdown = //implement UI dropdown selection
-}
+// pub fn cardano_bc() {
+//     let ada_dropdown
+// }
 
-pub fn ethereum_bc() {
-    let eth_dropdown = //implement UI dropdown selection
-}
+// pub fn ethereum_bc() {
+//     let eth_dropdown
+// }
 
-pub fn fantom_bc() {
-    let ftm_dropdown = //imimplement UI dropdown selection
-}
+// pub fn fantom_bc() {
+//     let ftm_dropdown
+// }
 
-pub fn harmony_bc() {
-    let hmy_dropdown = //implement UI dropdown selection
-}
+// pub fn harmony_bc() {
+//     let hmy_dropdown
+// }
 
-pub fn huobi_bc() {
-    let huo_dropdown = //implement UI dropdown selection
-}
+// pub fn huobi_bc() {
+//     let huo_dropdown
+// }
 
-pub fn polygon_bc() {
-    let poly_dropdown = //implement UI dropdown selection
-}
+// pub fn polygon_bc() {
+//     let poly_dropdown
+// }
 
-pub fn solana_bc() {
-    let sol_dropdown = //implement UI dropdown selection
-}
+// pub fn solana_bc() {
+//     let sol_dropdown
+// }
 
-pub fn xdai_bc() {
-    let xdai_dropdown = //implement UI dropdown selection
-}
+// pub fn xdai_bc() {
+//     let xdai_dropdown
+// }
