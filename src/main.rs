@@ -21,6 +21,12 @@ struct Counter {
     decrement_button: button::State,
 }
 
+#[derive(Debug, Clone, Copy)]
+pub enum Message {
+    IncrementPressed,
+    DecrementPressed,
+}
+
 pub fn main() {
     binance::call_binance_req();
     cardano::call_cardano_req();
