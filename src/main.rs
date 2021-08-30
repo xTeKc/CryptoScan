@@ -12,6 +12,15 @@ use blockchains::{
 };
 use iced::button;
 
+struct Counter {
+    // The counter value
+    value: i32,
+
+    // The local state of the two buttons
+    increment_button: button::State,
+    decrement_button: button::State,
+}
+
 pub fn main() {
     binance::call_binance_req();
     cardano::call_cardano_req();
