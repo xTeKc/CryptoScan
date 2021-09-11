@@ -13,6 +13,13 @@ use blockchains::{
 use fltk::*;
 
 
+fn gui() {
+    let app = app::App::default();
+    let mut win = window::Window::new(100, 100, 400, 300, "Window");
+    win.end();
+}
+
+
 pub fn main() {
     binance::call_binance_req();
     cardano::call_cardano_req();
