@@ -11,33 +11,35 @@ use blockchains::{
     xdai
 };
 use fltk::{app, button::Button, frame::Frame, prelude::*, window::Window};
-
+use fstrings::*;
 
 fn gui() {
     let app = app::App::default();
     let mut wind = Window::default().with_size(400, 300);
     let mut frame = Frame::default().with_size(200, 100).center_of(&wind);
-    let mut but = Button::new(160, 210, 80, 40, "Click me!");
+    let mut but = Button::new(160, 210, 80, 40, "Search");
+    let binance = binance::call_binance_req();
 
     wind.end();
     wind.show();
     
-    but.set_callback(move |_| frame.set_label("Hello world"));
+    let call = but.set_callback(move |_| frame.set_label(""));
+    println!("{:?}, {:?}", call, binance);
 
     app.run().unwrap();
 }
 
 
 pub fn main() {
-    binance::call_binance_req();
-    cardano::call_cardano_req();
-    ethereum::call_ethereum_req();
-    fantom::call_fantom_req();
-    harmony::call_harmony_req();
-    huobi::call_huobi_req();
-    polygon::call_polygon_req();
-    solana::call_solana_req();
-    xdai::call_xdai_req();
+    // binance::call_binance_req();
+    // cardano::call_cardano_req();
+    // ethereum::call_ethereum_req();
+    // fantom::call_fantom_req();
+    // harmony::call_harmony_req();
+    // huobi::call_huobi_req();
+    // polygon::call_polygon_req();
+    // solana::call_solana_req();
+    // xdai::call_xdai_req();
     gui();
 }
 
