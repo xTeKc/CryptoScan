@@ -11,7 +11,7 @@ use blockchains::{
     xdai
 };
 use fltk::{app, button::Button, frame::Frame, prelude::*, window::Window};
-use fstrings::*;
+
 
 fn gui() {
     let app = app::App::default();
@@ -23,7 +23,8 @@ fn gui() {
     wind.end();
     wind.show();
     
-    let call = but.set_callback(move |_| frame.set_label(""));
+    let call = but.set_callback(move |_| frame.set_label("Hello world"));
+
     println!("{:?}, {:?}", call, binance);
 
     app.run().unwrap();
