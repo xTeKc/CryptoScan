@@ -10,25 +10,6 @@ use blockchains::{
     solana,
     xdai
 };
-use fltk::{app, button::Button, frame::Frame, prelude::*, window::Window};
-
-
-fn gui() {
-    let app = app::App::default();
-    let mut wind = Window::default().with_size(400, 300);
-    let mut frame = Frame::default().with_size(200, 100).center_of(&wind);
-    let mut but = Button::new(160, 210, 80, 40, "Search");
-    let binance = binance::call_binance_req();
-
-    wind.end();
-    wind.show();
-    
-    let call = but.set_callback(move |_| frame.set_label("Hello world"));
-
-    println!("{:?}, {:?}", call, binance);
-
-    app.run().unwrap();
-}
 
 
 pub fn main() {
@@ -41,7 +22,6 @@ pub fn main() {
     // polygon::call_polygon_req();
     // solana::call_solana_req();
     // xdai::call_xdai_req();
-    gui();
 }
 
 
