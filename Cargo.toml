@@ -1,5 +1,5 @@
 [package]
-name = "crypdatrs"
+name = "crypto_scan"
 version = "0.1.0"
 edition = "2018"
 
