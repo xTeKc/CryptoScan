@@ -10,6 +10,11 @@ use blockchains::{
     solana,
     xdai
 };
+mod ui;
+use ui::main_ui::{
+    build_ui,
+    ui_main,
+};
 
 
 pub fn main() {
