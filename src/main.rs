@@ -1,3 +1,5 @@
+#![allow(dead_code, unused_imports)]
+
 mod blockchains;
 use blockchains::{
     binance,
@@ -18,7 +20,7 @@ use blockchains::{
 
 
 pub fn main() {
-    // binance::call_binance_req();
+    binance::call_binance_req();
     // cardano::call_cardano_req();
     // ethereum::call_ethereum_req();
     // fantom::call_fantom_req();
