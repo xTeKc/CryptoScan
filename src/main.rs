@@ -10,11 +10,11 @@ use blockchains::{
     solana,
     xdai
 };
-mod ui;
-use ui::main_ui::{
-    build_ui,
-    ui_main,
-};
+// mod ui;
+// use ui::main_ui::{
+//     build_ui,
+//     ui_main,
+// };
 
 
 pub fn main() {
@@ -27,8 +27,8 @@ pub fn main() {
     // polygon::call_polygon_req();
     // solana::call_solana_req();
     // xdai::call_xdai_req();
-    build_ui(app: &gtk::Application);
-    ui_main();
+    // build_ui(app: &gtk::Application);
+    // ui_main();
 }
 
 
