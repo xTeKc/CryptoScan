@@ -1,5 +1,4 @@
-use ureq;
-use reqwest;
+
 
 // pub fn binance_req() -> Result<(), ureq::Error> {
 //   let req: String = ureq::get("https://api.coingecko.com/api/v3/ping")
@@ -10,8 +9,9 @@ use reqwest;
 // Ok(())
 // }
 
-pub fn binance_req() {
-  let req = reqwest::get("https://api.coingecko.com/api/v3/ping") async
+#[tokio::main]
+pub async fn binance_req() {
+  let req = reqwest::get("https://api.coingecko.com/api/v3/ping")
     .await?
     .text()
     .await?
