@@ -16,6 +16,7 @@ use blockchains::{
 
 
 pub fn main() {
+    binance::cli();
     binance::call_binance_req();
     // cardano::call_cardano_req();
     // ethereum::call_ethereum_req();
