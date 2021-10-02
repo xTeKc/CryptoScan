@@ -12,11 +12,7 @@ use blockchains::{
     solana,
     xdai
 };
-// mod ui;
-// use ui::main_ui::{
-//     build_ui,
-//     ui_main,
-// };
+
 
 
 pub fn main() {
@@ -32,41 +28,3 @@ pub fn main() {
     // build_ui(app: &gtk::Application);
     // ui_main();
 }
-
-
-
-// pub fn binance_bc() {
-//     let bsc_dropdown
-// }
-
-// pub fn cardano_bc() {
-//     let ada_dropdown
-// }
-
-// pub fn ethereum_bc() {
-//     let eth_dropdown
-// }
-
-// pub fn fantom_bc() {
-//     let ftm_dropdown
-// }
-
-// pub fn harmony_bc() {
-//     let hmy_dropdown
-// }
-
-// pub fn huobi_bc() {
-//     let huo_dropdown
-// }
-
-// pub fn polygon_bc() {
-//     let poly_dropdown
-// }
-
-// pub fn solana_bc() {
-//     let sol_dropdown
-// }
-
-// pub fn xdai_bc() {
-//     let xdai_dropdown
-// }
