@@ -1,8 +1,12 @@
 use ureq::*;
 
 
+pub struct Cryptos {
+  cryptos: Vec<Cryptos>
+}
+
 pub fn binance_req() -> Result<(), ureq::Error> {
-  let req: String = ureq::get("https://api.coingecko.com/api/v3/ping")
+  let req: String = ureq::get("https://api.coingecko.com/api/v3/global")
   .set("Example-Header", "header value")
   .call()?
   .into_string()?;
