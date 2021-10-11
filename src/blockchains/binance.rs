@@ -24,15 +24,6 @@ pub fn binance_req(req: &str) -> Result<Cryptos, Box<dyn Error>> {
   todo!()
 }
 
-// pub fn binance_req() -> Result<(), ureq::Error> {
-//   let req: String = ureq::get("https://api.coingecko.com/api/v3/global")
-//   .set("Example-Header", "header value")
-//   .call()?
-//   .into_string()?;
-//   println!("{:?}", req);
-// Ok(())
-// }
-
 pub fn call_binance_req() {
   let req = "https://api.coingecko.com/api/v3/global";
   let cryptos = binance_req(req);
