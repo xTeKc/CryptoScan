@@ -7,6 +7,7 @@ pub struct Cryptos {
   cryptos: Vec<Crypto>
 }
 
+#[derive(Deserialize)]
 pub struct Crypto {
   // name: String,
   symbol: String,
