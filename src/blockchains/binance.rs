@@ -12,7 +12,7 @@ pub struct Crypto {
 pub fn binance_req(req: &str) -> Result<Cryptos, Box<dyn Error>> {
   let resp = ureq::get(req).call()?.into_string()?;
 
-  dbg!(req);
+  dbg!(resp);
 
   todo!()
 }
