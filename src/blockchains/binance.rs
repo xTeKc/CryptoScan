@@ -6,9 +6,9 @@ pub struct Cryptos {
 }
 
 pub struct Crypto {
-  name: String,
+  // name: String,
   symbol: String,
-  price: u32
+  marketcap: u32
 }
 
 pub fn binance_req(req: &str) -> Result<Cryptos, Box<dyn Error>> {
