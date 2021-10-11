@@ -2,7 +2,11 @@ use ureq::*;
 
 
 pub struct Cryptos {
-  cryptos: Vec<Cryptos>
+  cryptos: Vec<Crypto>
+}
+
+pub struct Crypto {
+  // add data
 }
 
 pub fn binance_req() -> Result<(), ureq::Error> {
