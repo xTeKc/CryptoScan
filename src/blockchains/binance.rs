@@ -1,5 +1,4 @@
 use ureq::*;
-use std::env;
 
 
 pub fn binance_req() -> Result<(), ureq::Error> {
