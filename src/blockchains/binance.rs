@@ -6,7 +6,9 @@ pub struct Cryptos {
 }
 
 pub struct Crypto {
-  // add data
+  name: String,
+  symbol: String,
+  price: u32
 }
 
 pub fn binance_req(req: &str) -> Result<Cryptos, Box<dyn Error>> {
