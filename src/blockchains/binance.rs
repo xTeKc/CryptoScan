@@ -1,5 +1,5 @@
 use ureq::*;
-
+use std::error::Error;
 
 pub struct Cryptos {
   cryptos: Vec<Crypto>
@@ -10,7 +10,7 @@ pub struct Crypto {
 }
 
 pub fn binance_req() {
-  
+
 }
 
 // pub fn binance_req() -> Result<(), ureq::Error> {
