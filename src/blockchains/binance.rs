@@ -1,6 +1,8 @@
 use ureq::*;
 use std::error::Error;
+use serde::Deserialize;
 
+#[derive(Deserialize)]
 pub struct Cryptos {
   cryptos: Vec<Crypto>
 }
