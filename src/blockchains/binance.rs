@@ -27,6 +27,6 @@ pub fn binance_req(req: &str) -> Result<Cryptos, Box<dyn Error>> {
 // }
 
 pub fn call_binance_req() {
-  let b = binance_req();
-  println!("{:?}", b);
+  let req = "https://api.coingecko.com/api/v3/global";
+  let cryptos = binance_req(req);
 }
