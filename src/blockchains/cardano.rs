@@ -14,8 +14,9 @@ pub struct Crypto {
   marketcap: u32
 }
 
-pub fn cardano_req() {
-  
+pub fn cardano_req(req: &str) -> Result<Cryptos, Box<dyn Error>> {
+  let resp = ureq::get(req).call()?.into_string()?;
+
 }
 
 pub fn call_cardano_req() {
