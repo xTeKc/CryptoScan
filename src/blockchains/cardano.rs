@@ -14,6 +14,10 @@ pub struct Crypto {
   marketcap: u32
 }
 
+pub fn cardano_req() {
+  
+}
+
 pub fn call_cardano_req() {
   let b = cardano_req();
   println!("{:?}", b);
