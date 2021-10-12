@@ -21,6 +21,7 @@ pub fn cardano_req(req: &str) -> Result<Cryptos, Box<dyn Error>> {
 
   dbg!(cryptos);
 
+  todo!()
 }
 
 pub fn call_cardano_req() {
