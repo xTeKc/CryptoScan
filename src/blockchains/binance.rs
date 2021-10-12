@@ -1,4 +1,4 @@
-use ureq::*;
+// use ureq::*;
 use std::error::Error;
 use serde::Deserialize;
 
@@ -17,9 +17,9 @@ pub struct Crypto {
 pub fn binance_req(req: &str) -> Result<Cryptos, Box<dyn Error>> {
   let resp = ureq::get(req).call()?.into_string()?;
   
-  let cryptos = serde_json::from_str(&resp)?;
+  let cryptos: Cryptos = serde_json::from_str(&resp)?;
 
-  dbg!(resp);
+  dbg!(cryptos);
 
   todo!()
 }
@@ -27,4 +27,5 @@ pub fn binance_req(req: &str) -> Result<Cryptos, Box<dyn Error>> {
 pub fn call_binance_req() {
   let req = "https://api.coingecko.com/api/v3/global";
   let cryptos = binance_req(req);
+  dbg!(cryptos);
 }
