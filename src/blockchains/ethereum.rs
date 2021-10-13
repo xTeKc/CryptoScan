@@ -23,6 +23,5 @@ pub fn ethereum_req() {
 }
 
 pub fn call_ethereum_req() {
-  let b = ethereum_req();
-  println!("{:?}", b);
+
 }
