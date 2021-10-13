@@ -19,6 +19,7 @@ pub fn ethereum_req() {
 
   dbg!(cryptos);
 
+  todo!()
 }
 
 pub fn call_ethereum_req() {
