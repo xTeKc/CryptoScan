@@ -17,6 +17,8 @@ pub fn ethereum_req() {
 
   let cryptos: Cryptos = serde_json::from_str(&resp)?;
 
+  dbg!(cryptos);
+
 }
 
 pub fn call_ethereum_req() {
