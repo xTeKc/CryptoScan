@@ -14,7 +14,7 @@ pub struct Crypto {
   marketcap: u32
 }
 
-pub fn ethereum_req() {
+pub fn ethereum_req(req: &str) -> Result<Cryptos, Box<dyn Error>> {
   let resp = ureq::get(req).call()?.into_string()?;
 
   let cryptos: Cryptos = serde_json::from_str(&resp)?;
@@ -26,6 +26,6 @@ pub fn ethereum_req() {
 
 pub fn call_ethereum_req() {
   let req = "https://api.coingecko.com/api/v3/global";
-  let cryptos = cardano_req(req);
+  let cryptos = ethereum_req(req);
   dbg!(cryptos);
 }
