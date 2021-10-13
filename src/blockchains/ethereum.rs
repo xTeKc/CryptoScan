@@ -15,6 +15,8 @@ pub struct Crypto {
 pub fn ethereum_req() {
   let resp = ureq::get(req).call()?.into_string()?;
 
+  let cryptos: Cryptos = serde_json::from_str(&resp)?;
+
 }
 
 pub fn call_ethereum_req() {
