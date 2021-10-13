@@ -2,6 +2,10 @@
 use std::error::Error;
 use serde::Deserialize;
 
+pub struct Cryptos {
+  cryptos: Vec<Crypto>
+}
+
 pub fn ethereum_req() -> Result<(), ureq::Error> {
   let req: String = ureq::get("https://api.coingecko.com/api/v3/ping")
   .set("Example-Header", "header value")
