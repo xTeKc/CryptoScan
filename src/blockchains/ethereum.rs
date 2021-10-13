@@ -13,6 +13,7 @@ pub struct Crypto {
 }
 
 pub fn ethereum_req() {
+  let resp = ureq::get(req).call()?.into_string()?;
 
 }
 
