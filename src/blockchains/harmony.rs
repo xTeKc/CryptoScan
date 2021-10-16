@@ -25,5 +25,6 @@ pub fn harmony_req(req: &str) -> Result<Cryptos, Box<dyn Error>> {
 }
 
 pub fn call_harmony_req() {
+  let req = "https://api.coingecko.com/api/v3/global";
 
 }
