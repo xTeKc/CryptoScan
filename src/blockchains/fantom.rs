@@ -13,11 +13,10 @@ pub struct Crypto {
 }
 
 pub fn fantom_req() {
-  
+
 }
 
 
 pub fn call_fantom_req() {
-  let b = fantom_req();
-  println!("{:?}", b);
+
 }
