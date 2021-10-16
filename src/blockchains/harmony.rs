@@ -15,6 +15,8 @@ pub struct Crypto {
 pub fn harmony_req(req: &str) -> Result<Cryptos, Box<dyn Error>> {
   let resp = ureq::get(req).call()?.into_string()?;
 
+  let cryptos: Cryptos = serde_json::from_str(&resp)?;
+
 }
 
 pub fn call_harmony_req() {
