@@ -21,6 +21,7 @@ pub fn fantom_req(req: &str) -> Result<Cryptos, Box<dyn Error>> {
 
   dbg!(cryptos);
 
+  todo!()
 }
 
 
