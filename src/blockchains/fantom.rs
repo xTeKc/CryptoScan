@@ -26,5 +26,6 @@ pub fn fantom_req(req: &str) -> Result<Cryptos, Box<dyn Error>> {
 
 
 pub fn call_fantom_req() {
+  let req = "https://api.coingecko.com/api/v3/global";
 
 }
