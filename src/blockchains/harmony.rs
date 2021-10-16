@@ -13,6 +13,7 @@ pub struct Crypto {
 }
 
 pub fn harmony_req(req: &str) -> Result<Cryptos, Box<dyn Error>> {
+  let resp = ureq::get(req).call()?.into_string()?;
 
 }
 
