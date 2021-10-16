@@ -12,7 +12,7 @@ pub struct Crypto {
   marketcap: u32
 }
 
-pub fn harmony_req(){
+pub fn harmony_req(req: &str) -> Result<Cryptos, Box<dyn Error>> {
 
 }
 
