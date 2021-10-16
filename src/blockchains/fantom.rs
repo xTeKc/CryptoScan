@@ -15,6 +15,7 @@ pub struct Crypto {
 }
 
 pub fn fantom_req(req: &str) -> Result<Cryptos, Box<dyn Error>> {
+  let resp = ureq::get(req).call()?.into_string()?;
 
 }
 
