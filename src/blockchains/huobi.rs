@@ -14,6 +14,8 @@ pub struct Crypto {
 
 pub fn huobi_req(req: &str) -> Result<Cryptos, Box<dyn Error>> {
   let resp = ureq::get(req).call()?.into_string()?;
+  
+  let cryptos: Cryptos = serde_json::from_str(&resp)?;
 
 }
 
