@@ -12,7 +12,7 @@ pub struct Crypto {
   marketcap: u32
 }
 
-pub fn huobi_req() {
+pub fn huobi_req(req: &str) -> Result<Cryptos, Box<dyn Error>> {
 
 }
 
