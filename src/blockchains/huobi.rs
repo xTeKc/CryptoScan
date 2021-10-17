@@ -12,6 +12,5 @@ Ok(())
 }
 
 pub fn call_huobi_req() {
-  let b = huobi_req();
-  println!("{:?}", b);
+
 }
