@@ -2,6 +2,7 @@
 use std::error::Error;
 use serde::Deserialize;
 
+#[derive(Deserialize, Debug)]
 pub struct Cryptos {
   cryptos: Vec<Crypto>
 }
