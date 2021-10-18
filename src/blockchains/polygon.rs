@@ -12,6 +12,5 @@ Ok(())
 }
 
 pub fn call_polygon_req() {
-  let b = polygon_req();
-  println!("{:?}", b);
+
 }
