@@ -19,6 +19,8 @@ pub fn polygon_req(req: &str) -> Result<Cryptos, Box<dyn Error>> {
 
   let cryptos: Cryptos = serde_json::from_str(&resp)?;
 
+  dbg!(cryptos);
+
 }
 
 pub fn call_polygon_req() {
