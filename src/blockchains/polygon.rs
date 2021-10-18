@@ -14,7 +14,7 @@ pub struct Crypto {
   marketcap: u32
 }
 
-pub fn polygon_req() {
+pub fn polygon_req(req: &str) -> Result<Cryptos, Box<dyn Error>> {
 
 }
 
