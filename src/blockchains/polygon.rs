@@ -25,5 +25,6 @@ pub fn polygon_req(req: &str) -> Result<Cryptos, Box<dyn Error>> {
 }
 
 pub fn call_polygon_req() {
+  let req = "https://api.coingecko.com/api/v3/global";
 
 }
