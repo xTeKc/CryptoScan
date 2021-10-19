@@ -2,10 +2,12 @@
 use std::error::Error;
 use serde::Deserialize;
 
+#[derive(Deserialize, Debug)]
 pub struct Cryptos {
   cryptos: Vec<Crypto>
 }
 
+#[derive(Deserialize, Debug)]
 pub struct Crypto {
   // name: String,
   symbol: String,
@@ -18,7 +20,7 @@ pub fn solana_req(req: &str) -> Result<Cryptos, Box<dyn Error>> {
   let cryptos: Cryptos = serde_json::from_str(&resp)?;
 
   dbg!(cryptos);
-  
+
   todo!()
 }
 
