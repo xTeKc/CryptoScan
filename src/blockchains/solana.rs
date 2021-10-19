@@ -18,7 +18,8 @@ pub fn solana_req(req: &str) -> Result<Cryptos, Box<dyn Error>> {
   let cryptos: Cryptos = serde_json::from_str(&resp)?;
 
   dbg!(cryptos);
-
+  
+  todo!()
 }
 
 pub fn call_solana_req() {
