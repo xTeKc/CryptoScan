@@ -27,4 +27,5 @@ pub fn solana_req(req: &str) -> Result<Cryptos, Box<dyn Error>> {
 pub fn call_solana_req() {
   let req = "https://api.coingecko.com/api/v3/global";
   let cryptos = solana_req(req);
+  dbg!(cryptos);
 }
