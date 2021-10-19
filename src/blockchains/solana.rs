@@ -12,7 +12,7 @@ pub struct Crypto {
   marketcap: u32
 }
 
-pub fn solana_req() {
+pub fn solana_req(req: &str) -> Result<Cryptos, Box<dyn Error>> {
 
 }
 
