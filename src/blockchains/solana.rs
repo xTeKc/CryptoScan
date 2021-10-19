@@ -12,6 +12,5 @@ Ok(())
 }
 
 pub fn call_solana_req() {
-  let b = solana_req();
-  println!("{:?}", b);
+
 }
