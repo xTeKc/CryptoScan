@@ -21,7 +21,7 @@ pub fn xdai_req(req: &str) -> Result<Cryptos, Box<dyn Error>> {
 
   dbg!(cryptos);
 
-  todo()
+  todo!()
 }
 
 pub fn call_xdai_req() {
