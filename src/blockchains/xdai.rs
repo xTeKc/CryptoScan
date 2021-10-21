@@ -12,7 +12,7 @@ pub struct Crypto {
   marketcap: u32
 }
 
-pub fn xdai_req() {
+pub fn xdai_req(req: &str) -> Result<Cryptos, Box<dyn Error>> {
 
 }
 
