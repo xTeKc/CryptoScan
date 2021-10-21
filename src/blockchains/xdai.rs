@@ -12,6 +12,5 @@ Ok(())
 }
 
 pub fn call_xdai_req() {
-  let b = xdai_req();
-  println!("{:?}", b);
+
 }
