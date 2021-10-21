@@ -6,6 +6,12 @@ pub struct Cryptos {
   cryptos: Vec<Crypto>
 }
 
+pub struct Crypto {
+  // name: String,
+  symbol: String,
+  marketcap: u32
+}
+
 pub fn xdai_req() {
 
 }
