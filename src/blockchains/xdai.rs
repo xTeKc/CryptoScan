@@ -9,12 +9,12 @@ pub struct Cryptos {
 
 #[derive(Deserialize, Debug)]
 pub struct Crypto {
-  // name: String,
+  name: String,
   symbol: String,
   marketcap: u32
 }
 
-pub fn xdai_req(req: &str) -> Result<Cryptos, Box<dyn Error>> {
+pub fn xdai_req(req: &str) -> Result<Vec<Crypto>, Box<dyn Error>> {
   let resp = ureq::get(req).call()?.into_string()?;
 
   let cryptos: Cryptos = serde_json::from_str(&resp)?;
@@ -24,7 +24,7 @@ pub fn xdai_req(req: &str) -> Result<Cryptos, Box<dyn Error>> {
   todo!()
 }
 
-pub fn call_xdai_req() {
+pub fn call_xdai_req() -> Result<(), Box<dyn Error>> {
   let req = "https://api.coingecko.com/api/v3/global";
   let cryptos = xdai_req(req);
   dbg!(cryptos);
