@@ -9,7 +9,7 @@ pub struct Cryptos {
 
 #[derive(Deserialize, Debug)]
 pub struct Crypto {
-  // name: String,
+  name: String,
   symbol: String,
   marketcap: u32
 }
