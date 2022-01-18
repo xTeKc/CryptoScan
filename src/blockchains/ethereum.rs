@@ -28,4 +28,5 @@ pub fn call_ethereum_req() {
   let req = "https://api.coingecko.com/api/v3/global";
   let cryptos = ethereum_req(req);
   dbg!(cryptos);
+  println!("{req}");
 }
