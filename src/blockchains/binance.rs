@@ -21,7 +21,7 @@ pub fn binance_req(req: &str) -> Result<Cryptos, Box<dyn Error>> {
 
   dbg!(cryptos);
 
-  todo!();
+  todo!()
 }
 
 pub fn call_binance_req() {
