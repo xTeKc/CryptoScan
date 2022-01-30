@@ -1,6 +1,6 @@
-// use ureq::*;
 use std::error::Error;
 use serde::Deserialize;
+use std::collections::HashMap;
 
 #[derive(Deserialize, Debug)]
 pub struct Cryptos {
@@ -15,7 +15,10 @@ pub struct Crypto {
 }
 
 pub fn solana_req(req: &str) -> Result<Cryptos, Box<dyn Error>> {
-  let resp = ureq::get(req).call()?.into_string()?;
+  let resp = reqwest::get(req)
+  .await?
+  .text()
+  .await?;
 
   let cryptos: Cryptos = serde_json::from_str(&resp)?;
 
