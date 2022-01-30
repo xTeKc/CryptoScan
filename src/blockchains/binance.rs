@@ -23,6 +23,8 @@ pub async fn binance_req(req: &str) -> Result<Cryptos, Box<dyn Error>> {
   .text()
   .await?;
   
+  println!("resp = {:?}", resp);
+  
   let cryptos: Cryptos = serde_json::from_str(&resp)?;
 
   dbg!(cryptos);
@@ -33,6 +35,6 @@ pub async fn binance_req(req: &str) -> Result<Cryptos, Box<dyn Error>> {
 pub fn call_binance_req() {
   let req = "https://api.coingecko.com/api/v3/global";
   let cryptos = binance_req(req);
-  dbg!(cryptos);
+  // dbg!(cryptos);
   println!("{req}");
 }
