@@ -1,6 +1,6 @@
-// use ureq::*;
 use std::error::Error;
 use serde::Deserialize;
+use std::collections::HashMap;
 
 #[derive(Deserialize, Debug)]
 pub struct Cryptos {
@@ -14,8 +14,12 @@ pub struct Crypto {
   marketcap: u32
 }
 
-pub fn binance_req(req: &str) -> Result<Cryptos, Box<dyn Error>> {
-  let resp = ureq::get(req).call()?.into_string()?;
+#[tokio::main]
+pub async fn binance_req(req: &str) -> Result<Cryptos, Box<dyn Error>> {
+  let resp = reqwest::get(req)
+  .await?
+  .text()
+  .await?;
   
   let cryptos: Cryptos = serde_json::from_str(&resp)?;
 
