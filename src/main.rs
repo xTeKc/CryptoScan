@@ -26,5 +26,4 @@ pub fn main() {
     // solana::call_solana_req();
     // xdai::call_xdai_req();
     // build_ui(app: &gtk::Application);
-    // ui_main();
 }
