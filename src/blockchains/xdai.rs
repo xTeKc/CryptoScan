@@ -14,7 +14,8 @@ pub struct Crypto {
   marketcap: u32
 }
 
-pub fn xdai_req(req: &str) -> Result<Vec<Crypto>, Box<dyn Error>> {
+#[tokio::main]
+pub async fn xdai_req(req: &str) -> Result<Vec<Crypto>, Box<dyn Error>> {
   let resp = reqwest::get(req)
   .await?
   .text()
