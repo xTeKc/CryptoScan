@@ -23,6 +23,8 @@ pub async fn fantom_req(req: &str) -> Result<Cryptos, Box<dyn Error>> {
   .text()
   .await?;
 
+  println!("resp = {:?}", resp);
+
   let cryptos: Cryptos = serde_json::from_str(&resp)?;
 
   dbg!(cryptos);
