@@ -23,6 +23,8 @@ pub async fn xdai_req(req: &str) -> Result<Vec<Crypto>, Box<dyn Error>> {
   .text()
   .await?;
 
+  println!("resp = {:?}", resp);
+
   let cryptos: Cryptos = serde_json::from_str(&resp)?;
 
   dbg!(cryptos);
