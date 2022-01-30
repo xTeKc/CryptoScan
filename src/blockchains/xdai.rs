@@ -34,7 +34,7 @@ pub async fn xdai_req(req: &str) -> Result<Vec<Crypto>, Box<dyn Error>> {
 
 pub fn call_xdai_req() {
   let req = "https://api.coingecko.com/api/v3/global";
-  let cryptos = xdai_req(req);
-  dbg!(cryptos);
+  let _cryptos = xdai_req(req);
+  dbg!(_cryptos);
   println!("{req}");
 }
