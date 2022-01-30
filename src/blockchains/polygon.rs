@@ -34,7 +34,7 @@ pub async fn polygon_req(req: &str) -> Result<Cryptos, Box<dyn Error>> {
 
 pub fn call_polygon_req() {
   let req = "https://api.coingecko.com/api/v3/global";
-  let cryptos = polygon_req(req);
-  dbg!(cryptos);
+  let _cryptos = polygon_req(req);
+  dbg!(_cryptos);
   println!("{req}");
 }
