@@ -1,3 +1,5 @@
+#![allow(unused_must_use)]
+
 use std::error::Error;
 use serde::Deserialize;
 use std::collections::HashMap;
