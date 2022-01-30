@@ -25,5 +25,4 @@ pub fn main() {
     // polygon::call_polygon_req();
     // solana::call_solana_req();
     // xdai::call_xdai_req();
-    // build_ui(app: &gtk::Application);
 }
