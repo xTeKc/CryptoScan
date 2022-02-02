@@ -14,6 +14,7 @@ use blockchains::{
 };
 use std::env;
 use std::io::{stdin, stdout, Write};
+use spinners::{Spinner, Spinners};
 
 
 pub fn main() {
