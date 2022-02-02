@@ -13,6 +13,7 @@ use blockchains::{
     xdai
 };
 use std::env;
+use std::io::{stdin, stdout, Write};
 
 
 pub fn main() {
