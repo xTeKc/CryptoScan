@@ -1,4 +1,3 @@
-![workflow](https://github.com/xTeKc/CryptoScan/actions/workflows/ci.yml/badge.svg)
 
 # CryptoScan
 -------
